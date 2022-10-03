@@ -1,0 +1,152 @@
+* {
+background-color: black;
+/*border:1px solid rgb(47, 51, 54);*/
+font-family: Helvetica;
+}
+
+input {
+  text-align: left;
+
+}
+
+#search_bar{
+ color:white;
+ background-color:rgb(169,169,169);
+ border-radius: 25px;
+ margin-top:10px;
+ margin-left:16px;
+ width:300px;
+ height:40px;
+ margin-bottom:15px;
+ border-color:rgb(47, 51, 54);
+}
+
+.placeholder {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  color:rgb(110,118,125);
+  background-color: white;
+  padding: 0 0px;
+}
+
+#highlighted{
+  color:rgb(29,161,242);
+  border-bottom:4px solid rgb(29,161,242);
+  padding-bottom:20px;
+}
+
+.wd-gear{
+    margin-left: 16px;
+    margin-right: 12px;
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+
+}
+
+.wd-top-hyperlinks{
+    text-decoration:none;
+    border:rgb(47, 51, 54);
+    margin-left: 16px;
+    color:rgb(110, 118, 125);
+    font-size:15px;
+    /*border-bottom:2px solid rgb(47, 51, 54);*/
+    border-radius: 2px;
+}
+
+.wd-trending-bar{
+  border-bottom:3px solid rgb(47, 51, 54);
+  padding-bottom:25px;
+}
+
+.wd-trending-for-you-block{
+  position:relative;
+  top:5px;
+  border-top:1px solid rgb(47, 51, 54);
+  border-border:1px solid rgb(47, 51, 54);
+}
+
+.wd-trending-for-you-post{
+   /*border-top:1px solid rgb(47, 51, 54);*/
+   border:1px solid rgb(47, 51, 54);
+   padding:10px 0px 20px;
+}
+
+.wd-trending-for-you-post-with-image{
+   /*border-top:1px solid rgb(47, 51, 54);*/
+   border:1px solid rgb(47, 51, 54);
+   padding:10px 0px 20px;
+   block-size:110px;
+}
+
+
+
+.wd-trending-for-you-title{
+   margin-left:16px;
+   position:relative;
+   top:1px;
+   color:white;
+   font-size:20px;
+   max-width: 30ch;
+   padding-top:10px;
+}
+
+.wd-trending-for-you-author{
+    position: relative;
+    top: 1px;
+    margin-left:16px;
+    font-size:13px;
+    color:white;
+    padding-bottom:10px;
+}
+
+.wd-trending-for-you-meta-info-top{
+  position: relative;
+  top: 1px;
+  margin-left:16px;
+  font-size:13px;
+  color:rgb(110, 118, 125);
+}
+
+.wd-trending-for-you-meta-info-bottom{
+  position: relative;
+  top: 1px;
+  margin-left:16px;
+  font-size:13px;
+  color:rgb(110, 118, 125);
+  padding-top:10px;
+}
+
+span{
+    padding-bottom:10px;
+}
+
+
+.wd-image-in-trending{
+  width:100ox;
+  height:100px;
+  position:relative;
+  bottom:2.5em;
+  float:right;
+  text-align:right;
+  margin-right:16px;
+}
+
+.wd-trending-for-you-post-with-topic{
+   border:1px solid rgb(47, 51, 54);
+   padding:10px 0px 20px;
+   block-size:110px;
+}
+
+
+
+
+
+
