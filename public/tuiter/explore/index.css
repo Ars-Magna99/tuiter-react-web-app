@@ -8,14 +8,22 @@ input {
   text-align: left;
 
 }
+.wd-search-bar-container{
+ margin-left:32px;
+ margin-right:32px;
+ border-left:solid 1px rgb(110, 118, 125);
+ border-right:solid 1px rgb(110, 118, 125);
+ padding-bottom:0px;
+}
 
 #search_bar{
  color:white;
  background-color:rgb(169,169,169);
  border-radius: 25px;
  margin-top:10px;
- margin-left:16px;
- width:300px;
+ margin-left:32px;
+ margin-right:32px;
+ width:450px;
  height:40px;
  margin-bottom:15px;
  border-color:rgb(47, 51, 54);
@@ -28,6 +36,7 @@ input {
   color:rgb(110,118,125);
   background-color: white;
   padding: 0 0px;
+
 }
 
 #highlighted{
@@ -36,25 +45,12 @@ input {
   padding-bottom:20px;
 }
 
-.wd-gear{
-    margin-left: 16px;
-    margin-right: 12px;
-    font: bold 11px Arial;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
 
-}
 
 .wd-top-hyperlinks{
     text-decoration:none;
     border:rgb(47, 51, 54);
-    margin-left: 16px;
+    margin-left: 32px;
     color:rgb(110, 118, 125);
     font-size:15px;
     /*border-bottom:2px solid rgb(47, 51, 54);*/
@@ -64,19 +60,34 @@ input {
 .wd-trending-bar{
   border-bottom:3px solid rgb(47, 51, 54);
   padding-bottom:25px;
+  margin-left:0px;
+  margin-right:0px;
+  padding-top:10px;
 }
 
 .wd-trending-for-you-block{
   position:relative;
   top:5px;
   border-top:1px solid rgb(47, 51, 54);
-  border-border:1px solid rgb(47, 51, 54);
+  border-bottom:1px solid rgb(47, 51, 54);
+  margin-left:32px;
+    margin-right:32px;
+}
+
+.wd-gear-icon{
+float:right;
+background-color:transparent;
+color:rgb(29,161,242);
+position: relative;
+left: -25px;
+top: 35px;
 }
 
 .wd-trending-for-you-post{
    /*border-top:1px solid rgb(47, 51, 54);*/
    border:1px solid rgb(47, 51, 54);
    padding:10px 0px 20px;
+   background-color:transparent;
 }
 
 .wd-trending-for-you-post-with-image{
@@ -84,6 +95,7 @@ input {
    border:1px solid rgb(47, 51, 54);
    padding:10px 0px 20px;
    block-size:110px;
+   background-color:transparent;
 }
 
 
@@ -96,6 +108,7 @@ input {
    font-size:20px;
    max-width: 30ch;
    padding-top:10px;
+      background-color:transparent;
 }
 
 .wd-trending-for-you-author{
@@ -105,6 +118,7 @@ input {
     font-size:13px;
     color:white;
     padding-bottom:10px;
+       background-color:transparent;
 }
 
 .wd-trending-for-you-meta-info-top{
@@ -113,6 +127,7 @@ input {
   margin-left:16px;
   font-size:13px;
   color:rgb(110, 118, 125);
+     background-color:transparent;
 }
 
 .wd-trending-for-you-meta-info-bottom{
@@ -145,6 +160,14 @@ span{
    block-size:110px;
 }
 
+.wd-ellipsis-icon{
+float:right;
+background-color:transparent;
+position:relative;
+left:-12px;
+bottom: -1px;
+color:white;
+}
 
 
 
