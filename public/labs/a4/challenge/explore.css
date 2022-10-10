@@ -1,0 +1,54 @@
+* {
+ font-size: 100%;
+ font-family: Arial;
+}
+
+.fa-cog {
+  color: white;
+}
+
+.wd-top-10px{
+position:relative;
+top:-30px;
+}
+
+.wd-link-no-decoration{
+text-decoration:None;
+}
+
+.wd-certified-icon{
+  font-size: 9px;
+}
+
+.wd-search-icon{
+  bottom:8px;
+  left:10px;
+}
+
+@media screen and (max-width:768px){
+  .hidden-xs{
+    display : none;
+  }
+}
+
+@media screen and (max-width:992px){
+  .hidden-sm{
+    display : none;
+  }
+}
+
+@media screen and (max-width:1200px){
+  .hidden-lg{
+    display : none;
+  }
+}
+
+ button{ outline:0; }
+
+.wd-left-space{
+position:relative;
+left: 20px;
+}
+
+
+

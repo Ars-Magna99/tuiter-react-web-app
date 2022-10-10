@@ -2,145 +2,337 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">  <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="index.css"
         rel="stylesheet"/>
-  <script src="https://kit.fontawesome.com/604fd88ab6.js" crossorigin="anonymous"></script>
 
+
+  <title>Title</title>
 </head>
 <body>
-<div class = "wd-search-bar-container">
-  <a href = "explore-settings.html" style = "text-decoration: none;">
-    <i class="fa-solid fa-gear fa-xl wd-gear-icon"></i>
-  </a>
-  <input type="search" id="search_bar" name="search_bar" placeholder=" Search Tuiter">
 
-  <p class = "wd-trending-bar">
-    <a href = "foryou.html" class = "wd-top-hyperlinks" id = "highlighted">For You</a>
-    <a href = "trending.html" class = "wd-top-hyperlinks">Trending</a>
-    <a href = "covid19.html" class = "wd-top-hyperlinks">COVID-19</a>
-    <a href = "news.html" class = "wd-top-hyperlinks">News</a>
-    <a href = "sports.html" class = "wd-top-hyperlinks">Sports</a>
-    <a href = "entertainment.html" class = "wd-top-hyperlinks">Entertainment</a>
-  </p>
+<div class = "container pt-4">
+  <div class="row">
+    <div class = "col-2">
+      <div class="list-group">
+        <i class="fab fa-twitter list-group-item"></i>
+        <a href="#" class="list-group-item list-group-item-action bg-transparent">
+          <i class="fas fa-home"></i>
+          <span class = "hidden-xs hidden-sm hidden-md hidden-lg ps-1">Home</span>
+        </a>
+        <a href="index.html" class="list-group-item list-group-item-action active">
+          <i class="fas fa-hashtag pr-2"></i>
+          <span class = "hidden-xs hidden-sm hidden-md hidden-lg ps-1">Explore</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-bell pr-2"></i>
+          <span class = "hidden-xs hidden-sm hidden-md hidden-lg ps-1">Notifications</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-envelope pr-2"></i>
+          <span class = "hidden-xs hidden-sm hidden-md hidden-lg ps-1">Messages</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-bookmark pr-2"></i>
+          <span class = "hidden-xs hidden-sm hidden-md hidden-lg ps-1">Bookmarks</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-list pr-2"></i>
+          <span class = "hidden-xs hidden-sm hidden-md hidden-lg ps-1">Lists</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-user-alt pr-2"></i>
+          <span class = "hidden-xs hidden-sm hidden-md hidden-lg ps-1">Profile</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <span class="fa-stack pr-1" style = "left:-12px;margin-right:-20px;">
+            <i class="fas fa-circle fa-stack-1x"></i>
+            <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class = "hidden-xs hidden-sm hidden-md hidden-lg ps-1">More</span>
+        </a>
+      </div>
+      <button class = "btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
+    </div>
+    <div class = "col-6">
+      <div class = "row">
+        <div class = "col-11">
+          <div class = "position-relative">
+            <input class = "ps-5 form-control rounded-pill" placeholder="Search Tuiter">
+              <span class = "position-absolute wd-search-icon">
+                <i class="fas fa-search"></i>
+              <span>
+          </div>
+        </div>
+        <div class = "col-1 float-end ">
+          <a href = "#">
+          <i class="fas fa-cog fa-2x text-primary"></i>
+          </a>
+        </div>
+      </div>
+      <ul class="nav nav-tabs mt-2 mb-2">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">For You</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sports</a>
+        </li>
+        <li class="nav-item d-none d-md-block">
+          <a class="nav-link" href="#">Entertainment</a>
+        </li>
 
+      </ul>
+      <div class = "position-relative">
+        <img src = "../../images/starship.jpeg" width="100%">
+        <h1 class = "position-absolute bottom-0 start-5 text-white" style = "left: 10px">SpaceX's Starship</h1>
+      </div>
+      <ul class = "list-group pb-5">
+        <li class = "list-group-item">
+          <div class = "row">
+            <div class = "col-8">
+              <div class = "row">
+              <div class = "text-secondary">
+              Web Development
+              </div>
+              <div class = "fw-bolder">
+                ReactJS
+                <span class="fa-stack wd-certified-icon">
+                <i class="fas fa-certificate fa-stack-2x"></i>
+                <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class = "text-secondary fw-normal">
+                 -2h
+                </span>
+                </div>
+              </div>
+
+              <div class = "fw-bolder">
+              ReactJS is a Single Page Application framework that makes it very easy to build Single Page Applications or SPAs.
+              </div>
+              </div>
+            <div class = "col-4">
+              <img src = "../../images/React_logo.png" width = 97px height = 100px class = "float-end">
+            </div>
+
+          </div>
+        </li>
+        <li class = "list-group-item">
+          <div class = "row">
+            <div class = "col-8">
+              <div class = "row">
+                <div class = "fw-bolder">
+                  Javascript
+                  <span class="fa-stack wd-certified-icon">
+                <i class="fas fa-certificate fa-stack-2x"></i>
+                <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                </span>
+                  <span class = "text-secondary fw-normal">
+                 -2h
+                </span>
+                </div>
+              </div>
+
+              <div class = "fw-bolder">
+                JavaScript is programming language that can run on browsers as well as desktops.
+              </div>
+              <div class = "text-secondary pt-1">
+                123K Tweets
+              </div>
+            </div>
+            <div class = "col-4">
+              <img src = "../../images/js_logo.png" height = 100px class = "float-end">
+            </div>
+
+          </div>
+        </li>
+        <li class = "list-group-item">
+          <div class = "row">
+            <div class = "col-8">
+              <div class = "row pt-1">
+                <div class = "text-secondary">
+                  Web Development
+                </div>
+                <div class = "fw-bolder">
+                  jQuery
+                  <span class="fa-stack wd-certified-icon">
+                <i class="fas fa-certificate fa-stack-2x"></i>
+                <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                </span>
+                  <span class = "text-secondary fw-normal">
+                 -2h
+                </span>
+                </div>
+              </div>
+
+              <div class = "text-secondary pt-1">
+                123K Tweets
+              </div>
+            </div>
+            <div class = "col-4">
+              <img src = "../../images/jquery_logo.webp" height = 85px class = "float-end">
+            </div>
+
+          </div>
+        </li>
+        <li class = "list-group-item">
+          <div class = "row">
+            <div class = "col-8">
+              <div class = "row pt-1">
+                <div class = "text-secondary">
+                  Web Development
+                </div>
+                <div class = "fw-bolder">
+                  NodeJS
+                  <span class="fa-stack wd-certified-icon">
+                <i class="fas fa-certificate fa-stack-2x"></i>
+                <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                </span>
+                  <span class = "text-secondary fw-normal">
+                 -2h
+                </span>
+                </div>
+              </div>
+
+              <div class = "text-secondary pt-1">
+                123K Tweets
+              </div>
+            </div>
+            <div class = "col-4">
+              <img src = "../../images/nodejs_logo.png" height = 100px class = "float-end">
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
+
+    </div>
+    <div class = "col-4 d-none d-lg-block">
+      <div class = "list-group">
+        <div class="list-group-item fw-bolder">Who to follow</div>
+        <div class = "list-group-item">
+          <div class = "row" >
+            <div class = "col">
+              <img src = "../../images/java-logo.png" height = 50px class = "float-start rounded-circle border">
+            </div>
+            <div class = "col-6 float-start">
+              <div class = "fw-bolder">
+                <a href = "#" class = "text-dark wd-link-no-decoration">Java
+                  <span class="fa-stack wd-certified-icon">
+                <i class="fas fa-certificate fa-stack-2x"></i>
+                <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+              </span>
+                </a>
+              </div>
+              <div class = "text-secondary">
+                @Java
+              </div>
+            </div>
+            <div class = "col">
+              <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+            </div>
+          </div>
+        </div>
+        <div class = "list-group-item">
+          <div class = "row" >
+          <div class = "col">
+            <img src = "../../images/relativity_space.png" height = 50px class = "float-start rounded-circle">
+          </div>
+          <div class = "col-6 float-start">
+            <div class = "fw-bolder">
+              <a href = "#" class = "text-dark wd-link-no-decoration">Relativity Space</a>
+              <span class="fa-stack wd-certified-icon">
+                <i class="fas fa-certificate fa-stack-2x"></i>
+                <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class = "text-secondary">
+              @Relativity Space
+            </div>
+          </div>
+          <div class = "col">
+            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+          </div>
+          </div>
+        </div>
+        <div class = "list-group-item">
+          <div class = "row" >
+            <div class = "col">
+              <img src = "../../images/virgin_logo.svg" height = 50px class = "float-start rounded-circle">
+            </div>
+            <div class = "col-6 float-start">
+              <div class = "fw-bolder">
+                <a href = "#" class = "text-dark wd-link-no-decoration">Virgin Galactic</a>
+                <span class="fa-stack wd-certified-icon">
+                <i class="fas fa-certificate fa-stack-2x"></i>
+                <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+              </span>
+              </div>
+              <div class = "text-secondary">
+                @Virgin Galactic
+              </div>
+            </div>
+            <div class = "col">
+              <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+            </div>
+          </div>
+        </div>
+        <div class = "list-group-item">
+          <div class = "row" >
+            <div class = "col">
+              <img src = "../../images/NASA_logo.png" height = 50px class = "float-start rounded-circle">
+            </div>
+            <div class = "col-6 float-start">
+              <div class = "fw-bolder">
+                <a href = "#" class = "text-dark wd-link-no-decoration">NASA</a>
+                <span class="fa-stack wd-certified-icon">
+                <i class="fas fa-certificate fa-stack-2x"></i>
+                <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+              </span>
+              </div>
+              <div class = "text-secondary">
+                @NASA
+              </div>
+            </div>
+            <div class = "col">
+              <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+            </div>
+          </div>
+        </div>
+        <div class = "list-group-item">
+          <div class = "row" >
+            <div class = "col">
+              <img src = "../../images/tesla_logo.png" height = 50px class = "float-start rounded-circle">
+            </div>
+            <div class = "col-6 float-start">
+              <div class = "fw-bolder">
+                <a href = "#" class = "text-dark wd-link-no-decoration">Tesla</a>
+                <span class="fa-stack wd-certified-icon">
+                <i class="fas fa-certificate fa-stack-2x"></i>
+                <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+              </span>
+              </div>
+              <div class = "text-secondary">
+                @Tesla
+              </div>
+            </div>
+            <div class = "col">
+              <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
-
-
-<div class = "wd-trending-for-you-block">
-  <div class = "wd-trending-for-you-post">
-    <a href = "#" style = "text-decoration:none">
-      <i class="fa-solid fa-ellipsis wd-ellipsis-icon fa-xl"></i>
-    </a>
-    <div class = "wd-trending-for-you-meta-info-top">
-      Trending in Science · United States
-
-    </div>
-
-    <div class = "wd-trending-for-you-title">
-      Tesla
-    </div>
-
-    <div class = "wd-trending-for-you-meta-info-bottom">
-      55.5K Tweets
-    </div>
-  </div>
-
-  <div class = "wd-trending-for-you-post">
-    <a href = "#" style = "text-decoration:none">
-      <i class="fa-solid fa-ellipsis wd-ellipsis-icon fa-xl"></i>
-    </a>
-    <div class = "wd-trending-for-you-meta-info-top">
-      Trending in Sports · United States
-    </div>
-
-    <div class = "wd-trending-for-you-title">
-      NBA Final
-    </div>
-
-    <div class = "wd-trending-for-you-meta-info-bottom">
-      6,518K Tweets
-    </div>
-  </div>
-
-  <div class = "wd-trending-for-you-post">
-    <a href = "#" style = "text-decoration:none">
-      <i class="fa-solid fa-ellipsis wd-ellipsis-icon fa-xl"></i>
-    </a>
-    <div class = "wd-trending-for-you-meta-info-top">
-      Entertainment · Trending
-    </div>
-
-    <div class = "wd-trending-for-you-title">
-      Batman
-    </div>
-
-    <div class = "wd-trending-for-you-meta-info-bottom">
-      1,118K Tweets
-    </div>
-  </div>
-
-  <div class = "wd-trending-for-you-post-with-image">
-    <div class = "wd-trending-for-you-meta-info">
-      <span class = "wd-trending-for-you-author">
-        The Hollywood Reporter
-      </span>
-
-      <span class = "wd-trending-for-you-meta-info-top">
-        · Yesterday
-      </span>
-    </div>
-
-    <div class = "wd-trending-for-you-title">
-      Updates on war in Ukraine
-    </div>
-    <img src="ukraine.jpg" class = "wd-image-in-trending">
-  </div>
-
-  <div class = "wd-trending-for-you-post-with-image">
-    <span class = "wd-trending-for-you-author">
-      The Hollywood Reporter
-    </span>
-    <span class = "wd-trending-for-you-meta-info-top">
-      · Yesterday
-    </span>
-
-    <div class = "wd-trending-for-you-title">
-      John Williams Awarded Knighthood
-    </div>
-    <img src="JohnWilliams.jpeg" class = "wd-image-in-trending">
-  </div>
-
-
-  <div class = "wd-trending-for-you-post-with-topic">
-    <div class = "wd-trending-for-you-meta-info-top">
-      COVID-19 · Live
-    </div>
-
-    <div class = "wd-trending-for-you-title">
-      COVID-19 Vaccines
-    </div>
-
-    <img src="vaccine.jpeg" class = "wd-image-in-trending" style = "width:100px;height:100px">
-  </div>
-
-  <div class = "wd-trending-for-you-post-with-topic">
-    <div class = "wd-trending-for-you-meta-info-top">
-      Movie · Live
-    </div>
-
-    <div class = "wd-trending-for-you-title">
-      Dragon Ball Super: Super Heroes
-    </div>
-
-    <img src="DB.jpeg" class = "wd-image-in-trending" style = "width:100px;height:100px">
-  </div>
-
-</div>
-
 
 </body>
 </html>
