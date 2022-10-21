@@ -14,26 +14,26 @@ const NavigationSidebar = (
      <a className="list-group-item">Tuiter</a>
      <Link to="/tuiter/home" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
-        <i class="fas fa-house-user"></i> Home
+        <i className="fas fa-house-user"></i> Home
      </Link>
      <Link to="/tuiter/explore" className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
-       <i class="fas fa-hashtag pr-2"></i> Explore
+       <i className="fas fa-hashtag pr-2"></i> Explore
      </Link>
       <Link to = "/" className="list-group-item">
-        <i class="fa-solid fa-flask"></i> Labs
+        <i className="fa-solid fa-flask"></i> Labs
       </Link>
      <a  className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
-       <i class="fas fa-bell pr-2"></i> Notifications
+       <i className="fas fa-bell pr-2"></i> Notifications
      </a>
      <a  className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-       <i class="fas fa-envelope pr-2"></i> Messages
+       <i className="fas fa-envelope pr-2"></i> Messages
      </a>
      <a className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-       <i class="fas fa-bookmark pr-2"></i> Bookmarks
+       <i className="fas fa-bookmark pr-2"></i> Bookmarks
      </a>
      <a className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
