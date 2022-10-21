@@ -11,7 +11,7 @@
   {
     "_id" : 2,
     "avatarIcon": "../../images/user_icon/NYpost.png", "time": "23h",
-    "userName": "New York Post", "handle": "nypost","postText":"Grimmes seen reading Karl Marx following split with Worlds richest man Elon Musk {`<a href = \"#\" class = \"text-decoration-none\">trib.al/nx2Gfaq</a>`}",
+    "userName": "New York Post", "handle": "nypost","postText":"Grimmes seen reading Karl Marx following split with Worlds richest man Elon Musk.",
     "postImage": "../../images/post_image/karl_marx.jpg", "containsArticle": "0","postTitle": "", "postSummary": "","postLinkAttached": "",
     "commentNum": "965", "retweetNum": "2.4K", "likeNum": "4K"
   }
