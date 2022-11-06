@@ -1,0 +1,17 @@
+.profileImg {
+width: 100%;
+position: relative;
+}
+
+.imgResponsive {
+max-width:100%;
+height:auto;
+}
+
+.imgCircle {
+position:absolute;
+z-index:99;
+left:10px;
+bottom:-50%;
+border-radius: 50%;
+}

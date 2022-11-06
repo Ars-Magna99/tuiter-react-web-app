@@ -1,0 +1,30 @@
+[
+  {
+    "_id": 234,
+    "userName": "SpaceX",
+    "avatarIcon": "../../images/spaceX_logo.jpg",
+    "time": "2h",
+    "hasImage":true,
+    "image": "../../images/post_image/inspiration4.webp",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great out there and being among the stars."
+  },
+  {
+    "_id": 123,
+    "userName": "Tesla",
+    "avatarIcon": "../../images/tesla_logo.png",
+    "time": "4d",
+    "hasImage": false,
+    "image": "",
+    "liked": false,
+    "replies": 234,
+    "retuits": 543,
+    "likes": 3456,
+    "handle": "@Tesla",
+    "tuit": "Autopilot is an advanced driver assistance system that enhances safety and convenience behind the wheel. When used properly, Autopilot reduces your overall workload as a driver. Each new Tesla vehicle is equipped with eight external cameras and powerful vision processing to provide an additional layer of safety. "
+  }
+]

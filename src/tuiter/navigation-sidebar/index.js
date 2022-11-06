@@ -39,10 +39,10 @@ const NavigationSidebar = (
                     ${active === 'lists'?'active':''}`}>
        <i className="fas fa-list pr-2"></i> Lists
      </a>
-     <a to="/" className={`list-group-item
+     <Link to="/tuiter/profile" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
        <i className="fas fa-user-alt pr-2"></i> Profile
-     </a>
+     </Link>
      <a to="/" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
        <span className="fa-stack pr-1" style = {{left:-12,marginRight:-20}}>

@@ -1,0 +1,61 @@
+import React from "react";
+
+const TuitStats = (
+{
+   tuit = {
+    "userName": "SpaceX",
+    "avatarIcon": "spacex.jpeg",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "spacex.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being."
+   }
+}
+) => {
+let heart_icon;
+if (tuit.liked){
+  heart_icon = <i className="fa-solid fa-heart fa-lg" style = {{"color":"red"}}></i>;
+} else{
+  heart_icon = <i className="far fa-heart fa-lg"></i>;
+}
+return(
+<div className = "row pt-3 pb-3" style = {{position:"relative",left:50,width:500}}>
+     <div className = "col">
+     <a href = "#" className = "text-decoration-none text-secondary">
+       <i className="far fa-comment fa-lg text-secondary"></i>
+       <span className = ""> {tuit.replies}</span>
+     </a>
+     </div>
+
+     <div className = "col">
+       <a href = "#" className = "text-decoration-none text-secondary">
+         <i className="fas fa-retweet fa-lg"></i>
+         <span className = ""> {tuit.retuits}</span>
+       </a>
+     </div>
+
+     <div className = "col">
+       <a href = "#" className = "text-decoration-none text-secondary">
+         {heart_icon}
+         <span className = ""> {tuit.likes}</span>
+       </a>
+     </div>
+
+
+     <div className = "col">
+      <a href = "#" className = "text-decoration-none text-secondary">
+        <i className="fa-solid fa-arrow-up-from-bracket fa-xl"></i>
+      </a>
+     </div>
+  </div>
+
+);
+};
+
+export default TuitStats;
+
