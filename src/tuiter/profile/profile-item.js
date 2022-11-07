@@ -39,6 +39,10 @@ return(
             <h6>{profile.bio}</h6>
          </div>
 
+        <div className = "row pt-2 pb-2" style = {{"position":"relative","top":"-30px","left":"20px","right":"5px"}}>
+           <h6 className = "text-secondary">Personal Website: <a href = {profile.website}>{profile.website}</a></h6>
+        </div>
+
          <div className = "row pb-5 pt-1" style = {{position:"relative","left":"30px","width":"500","top":"-30px"}}>
               <div className = "col">
               <a href = "#" className = "text-decoration-none text-secondary">

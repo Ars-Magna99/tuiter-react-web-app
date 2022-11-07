@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import {useSelector,useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 import {changeFName,updateProfile} from "../profile/profile-reducer.js"
+import { useNavigate } from 'react-router';
 
 
 const EditProfileComponent = (
 ) => {
-
+let navigate = useNavigate();
+  function handleClick() {
+    navigate('/tuiter/profile')
+  }
 const profile = useSelector(state => state.profile);
 const dispatch = useDispatch();
 
@@ -26,12 +30,12 @@ const doneEditingProfile = (profile) => {
   console.log(Bio);
   console.log(Location);
     console.log(Birthdate);
-  dispatch(updateProfile({...profile, firstName:FName,lastName:LName,location:Location,bio:Bio,dateOfBirth:Birthdate}));
+  dispatch(updateProfile({...profile, firstName:FName,lastName:LName,location:Location,bio:Bio,dateOfBirth:Birthdate,website:Web}));
 }
 
 return(
 
-<div className = "container border border-secondary">
+<div className = "container border border-secondary rounded">
 <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -49,7 +53,7 @@ return(
       </li>
 
       <span className="nav-item active ms-5 float-end">
-        <button onClick={() => doneEditingProfile(profile)} className = "rounded-pill btn btn-primary" style = {{"position":"relative","left":"250px"}}>Save</button>
+        <button onClick={() => {doneEditingProfile(profile);handleClick();}} className = "rounded-pill btn btn-primary" style = {{"position":"relative","left":"250px"}}>Save</button>
       </span>
     </ul>
   </div>
@@ -86,7 +90,12 @@ return(
 
         <div className = "col pt-3">
           <label htmlFor="DOB">Date Of Birth:</label>
-          <input type = "date" className="form-control" id = "DOB" onChange = {(e) => setBirthdate(e.target.value)} value = {Birthdate} style = {{"width":"120px"}}></input>
+          <input type = "date" className="form-control" id = "DOB" onChange = {(e) => setBirthdate(e.target.value)} value = {Birthdate} style = {{"width":"160px"}}></input>
+        </div>
+
+        <div className = "col pt-3 pb-1">
+          <label htmlFor="web">Personal Website:</label>
+          <input type = "text" className="form-control" id = "web" onChange = {(e) => setWeb(e.target.value)} value = {Web} style = {{"width":"120px"}}></input>
         </div>
       <div className = "col" className = "pt-3 pb-2 mb-2">
         <label htmlFor="loication">Location:</label>

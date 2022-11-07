@@ -12,7 +12,7 @@ const profile = {
                   "firstName": "Ziyang", "lastName": "Wang", "handle": "@ziw152","tweetNum":103,
                   "profilePicture": "../../images/user_icon/batman.png", 	"bannerPicture": "../../images/user_icon/universe.jpg",
                   "bio": "Computer Science Student. Currently looking for SDE interns.",
-                  "website": "youtube.com/webdevtv",
+                  "website": "https://github.com/Ars-Magna99",
                   "location": "Boston, MA",	"dateOfBirth": "1997-09-08",	"dateJoined": "4/2009",
                   "followingCount": 340,	"followersCount": 223
                 }
