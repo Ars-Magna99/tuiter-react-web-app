@@ -95,11 +95,11 @@ return(
 
         <div className = "col pt-3 pb-1">
           <label htmlFor="web">Personal Website:</label>
-          <input type = "text" className="form-control" id = "web" onChange = {(e) => setWeb(e.target.value)} value = {Web} style = {{"width":"120px"}}></input>
+          <input type = "text" className="form-control" id = "web" onChange = {(e) => setWeb(e.target.value)} value = {Web} style = {{"width":"300px"}}></input>
         </div>
       <div className = "col" className = "pt-3 pb-2 mb-2">
         <label htmlFor="loication">Location:</label>
-        <input type = "text" className="form-control" id = "location" onChange = {(e) => setLocation(e.target.value)} value = {Location} style = {{"width":"120px"}}></input>
+        <input type = "text" className="form-control" id = "location" onChange = {(e) => setLocation(e.target.value)} value = {Location} style = {{"width":"200px"}}></input>
       </div>
 </div>
 );
