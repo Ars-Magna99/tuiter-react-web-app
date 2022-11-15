@@ -19,12 +19,11 @@ const {tuits, loading} = useSelector(
         <li className="list-group-item">
           Loading...
         </li>
-
-
+     }
        tuitsArray.map(tuit =>
          <TuitItem
-           key={tuit._id} tuit={tuit}/> )
-     }
+           key={tuit._id} tuit={tuit}/> );
+
    </ul>
  );
 };
