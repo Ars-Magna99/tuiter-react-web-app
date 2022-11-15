@@ -40,12 +40,20 @@ return(
      </div>
 
      <div className = "col">
-       <a href = "#" className = "text-decoration-none text-secondary">
-         {heart_icon}
-         <span className = ""> {tuit.likes}</span>
-       </a>
+        Likes: {tuit.likes}
+        <i onClick={() => dispatch(updateTuitThunk({
+          ...tuit,
+          likes: tuit.likes + 1
+        })} className="bi bi-heart-fill me-2 text-danger"></i>
      </div>
 
+      <div className = "col">
+         Dislikes: {tuit.dislikes}
+         <i onClick={() => dispatch(updateTuitThunk({
+           ...tuit,
+           Dislikes: tuit.dislikes + 1
+         })} className="bi bi-hand-index-thumb-fill me-2 text-dark"></i>
+      </div>
 
      <div className = "col">
       <a href = "#" className = "text-decoration-none text-secondary">

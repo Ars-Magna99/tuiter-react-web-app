@@ -2,6 +2,7 @@ import React from "react";
 import TuitStats from "./TuitStats.js"
 import {useDispatch} from "react-redux";
 import {createTuit,deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
  {
@@ -30,7 +31,7 @@ if(tuit.hasImage){
 const dispatch = useDispatch();
 
 const deleteTuitHandler = (id) => {
-  dispatch(deleteTuit(id));
+  dispatch(deleteTuitThunk(id));
 }
  return(
 <li className = "group-list-item" style = {{"listStyleType":"none"}}>

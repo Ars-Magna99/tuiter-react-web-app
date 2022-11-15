@@ -11,6 +11,7 @@
     "replies": 123,
     "retuits": 432,
     "likes": 2345,
+    "dislikes": 2,
     "handle": "@spacex",
     "tuit": "You want to wake up in the morning and think the future is going to be great out there and being among the stars."
   },
@@ -41,6 +42,7 @@
     "replies": 294,
     "retuits": 143,
     "likes": 156,
+    "dislikes": 1,
     "handle": "@spaceX",
     "tuit": "Galaxy 31 (G-31) and Galaxy 32 (G-32) are the next satellites in Intelsat's comprehensive Galaxy fleet refresh plan, a new generation of technology that will provide Intelsat Media customers in North America with high-performance media distribution capabilities and unmatched penetration of cable headends."
   }
