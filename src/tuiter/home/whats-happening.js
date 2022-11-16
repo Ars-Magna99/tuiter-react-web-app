@@ -12,7 +12,7 @@ const WhatsHappening = () => {
       const newTuit = {
         tuit: whatsHappening,
         avatarIcon:"../images/NASA_logo.png",
-        dislike:0,
+        dislikes:0,
         handle:"@wzy0909",
         time: "just posted"
       }
