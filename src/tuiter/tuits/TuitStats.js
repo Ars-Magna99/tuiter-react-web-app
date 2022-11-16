@@ -55,8 +55,8 @@ return(
          Dislikes: {tuit.dislikes}
          <i onClick={() => dispatch(updateTuitThunk({
            ...tuit,
-           Dislikes: tuit.dislikes + 1
-         }))} className="bi bi-hand-index-thumb-fill me-2 text-dark"></i>
+           dislikes: tuit.dislikes + 1
+         }))} className="bi bi-hand-thumbs-down me-2 text-dark"></i>
       </div>
 
      <div className = "col">

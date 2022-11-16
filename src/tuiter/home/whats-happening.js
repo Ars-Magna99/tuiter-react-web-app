@@ -10,7 +10,10 @@ const WhatsHappening = () => {
 
  const tuitClickHandler = () => {
       const newTuit = {
-        tuit: whatsHappening
+        tuit: whatsHappening,
+        avatarIcon:"../images/NASA_logo.png",
+        handle:"@wzy0909",
+        time: "just posted"
       }
       dispatch(createTuitThunk(newTuit));
  }
