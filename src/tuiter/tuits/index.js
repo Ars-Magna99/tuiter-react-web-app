@@ -11,6 +11,9 @@ const {tuits, loading} = useSelector(
  useEffect(() => {
    dispatch(findTuitsThunk())
  }, [])
+
+ console.log(tuits);
+
  return(
    <ul className="list-group">
      {
@@ -20,10 +23,12 @@ const {tuits, loading} = useSelector(
           Loading...
         </li>
      }
-       tuitsArray.map(tuit =>
+     {
+       tuits.map(tuit =>
          <TuitItem
-           key={tuit._id} tuit={tuit}/> );
-
+           key={tuit._id} tuit={tuit}/>
+       )
+     }
    </ul>
  );
 };

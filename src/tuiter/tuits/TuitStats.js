@@ -1,4 +1,6 @@
 import React from "react";
+import {updateTuitThunk,createTuitThunk,deleteTuitThunk, findTuitsThunk} from "../../services/tuits-thunks.js";
+import {useDispatch,useSelector} from "react-redux";
 
 const TuitStats = (
 {
@@ -23,6 +25,8 @@ if (tuit.liked){
 } else{
   heart_icon = <i className="far fa-heart fa-lg"></i>;
 }
+ const dispatch = useDispatch();
+
 return(
 <div className = "row pt-3 pb-3" style = {{position:"relative",left:50,width:500}}>
      <div className = "col">
@@ -44,7 +48,7 @@ return(
         <i onClick={() => dispatch(updateTuitThunk({
           ...tuit,
           likes: tuit.likes + 1
-        })} className="bi bi-heart-fill me-2 text-danger"></i>
+        }))} className="bi bi-heart-fill me-2 text-danger"></i>
      </div>
 
       <div className = "col">
@@ -52,7 +56,7 @@ return(
          <i onClick={() => dispatch(updateTuitThunk({
            ...tuit,
            Dislikes: tuit.dislikes + 1
-         })} className="bi bi-hand-index-thumb-fill me-2 text-dark"></i>
+         }))} className="bi bi-hand-index-thumb-fill me-2 text-dark"></i>
       </div>
 
      <div className = "col">
