@@ -11,6 +11,7 @@ const WhatsHappening = () => {
  const tuitClickHandler = () => {
       const newTuit = {
         tuit: whatsHappening,
+        username:"Ziyang",
         avatarIcon:"../images/NASA_logo.png",
         dislikes:0,
         handle:"@wzy0909",
