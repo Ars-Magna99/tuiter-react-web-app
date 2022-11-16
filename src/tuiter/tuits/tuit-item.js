@@ -42,7 +42,7 @@ const deleteTuitHandler = (id) => {
     </div>
     <div className = "col-6 float-start">
       <div className = "fw-bolder">
-        <a href = "#" className = "text-dark" style = {{"textDecoration":"none"}}> {tuit.userName}
+        <a href = "#" className = "text-dark" style = {{"textDecoration":"none"}}> {tuit.username}
           <span className="fa-stack wd-certified-icon">
                 <i className="fas fa-certificate fa-stack-2x text-primary"></i>
                 <i className="fas fa-check fa-stack-1x text-white"></i>
