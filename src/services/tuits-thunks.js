@@ -31,4 +31,5 @@ export const updateTuitThunk =
     'tuits/updateTuit',
     async (tuit) =>
       await service.updateTuit(tuit)
+
 )
